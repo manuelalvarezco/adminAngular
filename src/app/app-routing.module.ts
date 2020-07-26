@@ -5,15 +5,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 const routes: Routes = [
-  { path: '',
-    component: LayoutComponent,
-    children: [
-      { path: '', pathMatch: 'full', redirectTo: 'pages/dashboard' },
-      {
-        path: 'pages',
-        loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
-      }
-    ]
+  { path: '', pathMatch: 'full', redirectTo: 'auth/login' },
+  {
+    path: 'pages',
+    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
   },
   {
     path: 'auth',
