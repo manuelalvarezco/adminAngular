@@ -7,6 +7,7 @@ import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
 import { LayoutComponent } from '../layout/layout.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'dashboard',
     component: LayoutComponent,
     children: [
