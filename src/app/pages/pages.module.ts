@@ -7,10 +7,11 @@ import { ProgressComponent } from './components/progress/progress.component';
 import { Grafica1Component } from './components/grafica1/grafica1.component';
 import { FormsModule } from "@angular/forms";
 import { SharedModule } from '../shared/shared.module';
+import { AccountSettingsComponent } from './components/account-settings/account-settings.component';
 
 
 @NgModule({
-  declarations: [ DashboardComponent, ProgressComponent, Grafica1Component],
+  declarations: [ DashboardComponent, ProgressComponent, Grafica1Component, AccountSettingsComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

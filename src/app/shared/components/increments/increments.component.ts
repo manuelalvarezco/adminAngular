@@ -17,10 +17,12 @@ export class IncrementsComponent implements OnInit {
 
   ngOnInit(): void {
     this.btnClass = `btn ${this.btnClass}`;
+
   }
 
   valueChange(value:number){
-    if (this.progress >= 0 && value >=0){
+
+    if (this.progress >= 100 && value >= 0){
       this.outputValue.emit(100);
       return this.progress = 100;
     }

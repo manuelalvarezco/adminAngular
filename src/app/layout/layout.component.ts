@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../core/services/settings/settings.service';
+
+declare function customInitFunction();
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private settingsService: SettingsService) { }
 
   ngOnInit(): void {
+    customInitFunction();
   }
 
 }
